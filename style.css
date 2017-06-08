@@ -1,16 +1,18 @@
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
-    font-family: 'Montserrat', 'sans-serif';
+    font-family: 'Consolas', 'sans-serif';
     color: #424242;
     overflow: hidden;
 }
 
 .display {
     text-align: center;
-    display: table;
-    height: 100%;
-    margin: 0 auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
 }
 
 .wrap {
@@ -19,7 +21,6 @@ html, body {
 }
 
 p {
-    font-size: 100px;
     font-size: 40vmin;
     text-align: center;
     margin: 0;
@@ -63,4 +64,40 @@ p {
     border-top: 1px solid #F5F5F5;
     box-shadow: inset 0 0 25px #E8E8E8, 0 1px 0 #C3C3C3, 0 2px 0 #C9C9C9, 0 2px 3px #333;
     user-select: none
+}
+
+#case {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 300px;
+    border: none;
+    outline: none;
+    opacity: 0;
+    transition-duration: .3s;
+    background-clip: transparent
+}
+
+#case:hover {
+    opacity: 1;
+}
+
+#copy {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    color: #5E5E5E;
+    font: bold 15px arial;
+    text-decoration: none;
+    text-align: center;
+    margin: 10px;
+    padding: 10px 15px;
+    background: #EFF0F2;
+    border-radius: 4px;
+    border-top: 1px solid #F5F5F5;
+    box-shadow: inset 0 0 25px #E8E8E8, 0 1px 0 #C3C3C3, 0 2px 0 #C9C9C9, 0 2px 3px #333;
+    cursor: pointer;
+    user-select: none;
+    z-index: 20
 }
