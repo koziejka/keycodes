@@ -76,7 +76,7 @@ p {
     outline: none;
     opacity: 0;
     transition-duration: .3s;
-    background-clip: transparent
+    background-color: rgba(255,255,255,0.01)
 }
 
 #case:hover {
